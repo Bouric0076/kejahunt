@@ -37,35 +37,60 @@ Git & CI/CD ready
 backend/
 │
 ├── main.py           # FastAPI app entrypoint, CORS setup, includes routers
+
 ├── database.py       # Supabase config, HTTP helpers
+
 ├── models.py         # Pydantic models for entities
+
 ├── schemas.py        # Additional Pydantic schemas
+
 ├── .env              # Secret keys and DB connection (never push this!)
+
 ├── routers/
 │   ├── __init__.py     # Aggregates all routers
+
 │   ├── crud.py         # Async CRUD helpers for Supabase API
+
 │   ├── regions.py      # API for regions
+
 │   ├── users.py        # API for users
+
 │   ├── listings.py     # API for listings
+
 │   ├── photos.py       # API for photo uploads/fetching
+
 │   ├── payments.py     # API for payments/webhook
+
 │   ├── favourites.py   # API for saved listings
+
 │   ├── counties.py     # API for counties
+
 │   ├── auth.py         # Authentication endpoints
+
 └── .gitignore        # Makes sure secrets/dev files are NOT committed
 
 # Common Endpoints
 Path	Method	Description
+
 /auth/register	POST	User signup
+
 /auth/login	POST	User login/JWT
+
 /listings/	GET	Fetch listings
+
 /listings/	POST	Create listing
+
 /photos/upload	POST	Upload listing photo
+
 /payments/	POST	Create a payment
+
 /regions/	GET	Get all regions
+
 /users/	GET	Get all users
 
 # Authors
 Josphat Munene
+
 Bouric Okwaro
+
 Daniel Bundi
