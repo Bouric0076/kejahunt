@@ -34,9 +34,7 @@ Git & CI/CD ready
 
 # Project Structure
 
-backend/
-
-│
+backend/│
 
 ├── main.py           # FastAPI app entrypoint, CORS setup, includes routers
 
