@@ -35,7 +35,9 @@ Git & CI/CD ready
 # Project Structure
 
 backend/
+
 │
+
 ├── main.py           # FastAPI app entrypoint, CORS setup, includes routers
 
 ├── database.py       # Supabase config, HTTP helpers
