@@ -1,9 +1,10 @@
-#KejaHunt Backend
-#Overview
+# KejaHunt Backend
+
+# Overview
 KejaHunt is a property listing platform backend built with FastAPI.
 It provides RESTful APIs for property listing management, user authentication, photo uploading, payments, and more. The backend is tightly integrated with Supabase for database, storage, and authentication.
 
-#Features
+# Features
 User authentication (sign-up, login, JWT, roles)
 
 CRUD for listings, users, regions, counties, and favourites
@@ -16,7 +17,7 @@ Automated landlord reminders via FastMail
 
 CORS support for frontend apps
 
-#Technologies
+# Technologies
 Python (FastAPI, Pydantic)
 
 Supabase (PostgreSQL, Auth, Storage)
@@ -31,7 +32,7 @@ Docker support (optional)
 
 Git & CI/CD ready
 
-#Project Structure
+# Project Structure
 
 backend/
 │
@@ -53,7 +54,7 @@ backend/
 │   ├── auth.py         # Authentication endpoints
 └── .gitignore        # Makes sure secrets/dev files are NOT committed
 
-#Common Endpoints
+# Common Endpoints
 Path	Method	Description
 /auth/register	POST	User signup
 /auth/login	POST	User login/JWT
@@ -64,7 +65,7 @@ Path	Method	Description
 /regions/	GET	Get all regions
 /users/	GET	Get all users
 
-#Authors
+# Authors
 Josphat Munene
 Bouric Okwaro
 Daniel Bundi
